@@ -1,0 +1,95 @@
+ <beans 	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:task="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/util/spring-task-4.3.xsd">
+
+	<context:component-scan base-package="com.chinnasoft.realestate" />
+
+
+	<context:annotation-config/>
+	<mvc:annotation-driven />
+	<task:annotation-driven />
+	<!-- mapping static pages -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	
+	
+	
+	
+	<!-- placeHolder for Hibernate Properties File -->
+ <bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		p:location="classpath:hibernate-config.properties" />
+
+ 
+   <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver"  
+        id="tilesViewResolver">  
+        <property name="viewClass"  
+            value="org.springframework.web.servlet.view.tiles3.TilesView" />  
+    </bean>  
+  <!--   <bean class="com.fasterxml.jackson.databind.ObjectMapper" id="jsonMapper"/> -->
+    
+    <!-- Tiles Config Diclaration -->
+    
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+      <property name="definitions">
+        <list>
+         <value>/WEB-INF/tiles.xml</value>
+       </list>
+     </property>
+   </bean>
+	
+		<!-- <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/hmsPool"/> -->  <!-- JNDI DataSourse Connection -->
+	<jee:jndi-lookup id="dataSource" jndi-name="${jndi.name}"/>
+	
+	<!-- Session Factory Generation  -->
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<property name="dataSource" ref = "dataSource" />
+	<property name="packagesToScan" value="com.chinnasoft.realestate.entity.models" />
+	<property name="hibernateProperties">
+	<props>
+	<prop key = "hibernate.dialect">${hibernate.property.dialect}</prop>
+	<prop key = "hibernate.hbm2ddl.auto">${hibernate.property.hbm2ddl.auto}</prop>
+	<prop key = "hibernate.show_sql">${hibernate.property.showsql}</prop>
+	<prop key="hibernate.cache.use_second_level_cache">${hibernate.property.enableEHCache}</prop>
+    <prop key="hibernate.cache.use_query_cache">${hibernate.property.enableEHQueryCache}</prop>
+    <prop key="hibernate.cache.region.factory_class">${hibernate.property.EHCacheRegion}</prop>
+	</props>
+	</property>
+	</bean>  
+	
+	
+		<!-- Transaction Creation --> 
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!--   Hibernate configuration Start -->
+   
+  <mvc:interceptors>
+  
+  <bean id="webContentInterceptor" class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+                <property name="cacheSeconds" value="0"/>
+                <property name="useExpiresHeader" value="false"/>
+                <property name="useCacheControlHeader" value="true"/>
+                <property name="useCacheControlNoStore" value="true"/>
+            </bean> 
+  <mvc:interceptor>
+        <mvc:mapping path="/*.htm"/>
+        <mvc:exclude-mapping path="/loginPage.htm"/>
+        <bean class="com.chinnasoft.realestate.Intercceptors.LoginSessionInterceptor" />
+   </mvc:interceptor>
+ 
+  </mvc:interceptors> 
+</beans>

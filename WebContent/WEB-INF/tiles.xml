@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	
+<definition name="loginPage" template="/WEB-INF/tiles/baseLayOut.jsp">
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/home/loginPage.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+	<definition name="baseLayout2" template="WEB-INF/tiles/baseLayOut2.jsp">
+	<put-attribute name="header" value="" /> 
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	<definition name="baseLayout" template="WEB-INF/tiles/baseLayOut.jsp">
+	<put-attribute name="header" value="" /> 
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	
+
+
+
+
+    <definition name="DefaultTemplate" template="/WEB-INF/tiles/SiteTemplate.jsp">
+		<put-attribute name="title" 	value="Home" />
+		<put-attribute name="header" 	value="/WEB-INF/jsp/template/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/jsp/template/dynamicMenu.jsp" />
+		<put-attribute name="body" 		value="" />
+		<put-attribute name="footer" 	value="/WEB-INF/jsp/template/footer.jsp" />
+	</definition>
+	
+	<definition name="LoginTemplate" template="/WEB-INF/jsp/login.jsp"> </definition>
+	
+	<definition name="IndexTemplate" template="/WEB-INF/jsp/index.jsp"> </definition>
+		
+	<definition name="HomeTemplate" template="/WEB-INF/tiles/HomeTemplate.jsp">
+		<put-attribute name="title" 	value="Home" />
+		<put-attribute name="header" 	value="/WEB-INF/jsp/template/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/jsp/template/dynamicMenu.jsp" />
+		<put-attribute name="body" 		value="" />
+		<put-attribute name="footer" 	value="/WEB-INF/jsp/template/footer.jsp" />
+	</definition>
+
+<definition name="hello" extends="HomeTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/home/homePage.jsp" />
+	</definition>
+	
+
+
+
+<definition name="userRegistrationList" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/userRegistrationList.jsp" />
+	</definition>
+	
+</tiles-definitions>
+

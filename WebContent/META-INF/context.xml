@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context antiJARLocking="true" path="/realestate" docBase="realestate" crossContext="true" reloadable="true" debug="1">
+<Resource name="hmsPool"
+	auth="Container"
+	type="javax.sql.DataSource"
+	poolName="hmsPool"
+	username="chinnaiah"
+	password="root"
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost:3306/healthcaretesting1"
+	base="80"
+	log="D:/logs/hms_pool_${yyyy-MM-dd}.log"
+	idleTime="300000"
+	logLevel="error,crisis"
+	killActiveConnectionsOverAge="120000"
+	cycleConnections="1000"
+	queueConnectionRequests="true"
+	waitForConnectionIfDatabaseIsDown="false"
+	numberOfConnectionsToInitializeWith="5"/>
+</Context>

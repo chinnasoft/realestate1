@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : log4j.xml
+    Created on : December 30, 2013, 12:04 PM
+    
+    Description:
+        Purpose of the document follows.
+-->
+
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="STDOUT" class="org.apache.log4j.DailyRollingFileAppender"> <!--DailyRollingFileAppender org.apache.log4j.ConsoleAppender -->
+       <param name="file" value="D:/logs/hmserp.log" />
+       <param name="Append" value="true" />
+       <param name="DatePattern" value="'.'yyyy-MM-dd" />
+       <param name="Threshold" value="INFO"/>
+       <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%t] %d{yyyy:MM:dd HH:mm:ss,SSS} %-5p %c.%M:%L - %m%n"/>
+       </layout>
+    </appender>
+
+     <logger name="org.springframework">
+    	 <level value="DEBUG" />
+         <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="org.hibernate">
+    	 <level value="DEBUG" />
+         <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="com.mysql.jdbc">
+    	 <level value="DEBUG" />
+         <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="com.mchange.v2">
+    	 <level value="DEBUG" />
+         <appender-ref ref="STDOUT"/>
+    </logger>
+    <!-- for all other loggers log only debug and above log messages -->
+     <root>
+        <priority value="DEBUG"/>
+        <appender-ref ref="STDOUT" />
+     </root>
+
+</log4j:configuration>

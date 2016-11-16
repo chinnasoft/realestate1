@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Quotation" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="5" bottomMargin="5" isFloatColumnFooter="true" uuid="d6b64c81-1b36-4dd1-9247-135a8ea17246">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 2" uuid="cf6db20a-139b-4689-91b1-112ba94c7962">
+		<parameter name="qid" class="java.lang.String">
+			<defaultValueExpression><![CDATA[$P{qid}]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[SELECT
+     sales_products.`pid` AS sales_products_pid,
+     sales_products.`invoice_no` AS sales_products_invoice_no,
+     sales_products.`product_id` AS sales_products_product_id,
+     sales_products.`product_name` AS sales_products_product_name,
+     sales_products.`rate_per_quantity` AS sales_products_rate_per_quantity,
+     sales_products.`quantity` AS sales_products_quantity,
+     sales_products.`amount` AS sales_products_amount,
+     sales_products.`tax` AS sales_products_tax,
+     sales_products.`tax_amount` AS sales_products_tax_amount,
+     sales_products.`toatal_amount` AS sales_products_toatal_amount,
+     sales_products.`status` AS sales_products_status,
+     item_tbl.`itemcode` AS item_tbl_itemcode,
+     item_tbl.`parentname` AS item_tbl_parentname,
+     item_tbl.`itemname` AS item_tbl_itemname,
+     item_tbl.`description` AS item_tbl_description,
+     item_tbl.`uom` AS item_tbl_uom
+FROM
+     `sales_details` sales_details INNER JOIN `sales_products` sales_products ON sales_details.`invoice_no` = sales_products.`invoice_no`
+     INNER JOIN `item_tbl` item_tbl ON sales_products.`product_id` = item_tbl.`itemcode`
+WHERE
+     sales_details.`invoice_no` = $P{qid}]]>
+		</queryString>
+		<field name="sales_products_pid" class="java.lang.Long"/>
+		<field name="sales_products_invoice_no" class="java.lang.String"/>
+		<field name="sales_products_product_id" class="java.lang.String"/>
+		<field name="sales_products_product_name" class="java.lang.String"/>
+		<field name="sales_products_rate_per_quantity" class="java.lang.String"/>
+		<field name="sales_products_quantity" class="java.lang.String"/>
+		<field name="sales_products_amount" class="java.lang.String"/>
+		<field name="sales_products_tax" class="java.lang.String"/>
+		<field name="sales_products_tax_amount" class="java.lang.String"/>
+		<field name="sales_products_toatal_amount" class="java.lang.String"/>
+		<field name="sales_products_status" class="java.lang.String"/>
+		<field name="item_tbl_itemcode" class="java.lang.String"/>
+		<field name="item_tbl_parentname" class="java.lang.String"/>
+		<field name="item_tbl_itemname" class="java.lang.String"/>
+		<field name="item_tbl_description" class="java.lang.String"/>
+		<field name="item_tbl_uom" class="java.lang.String"/>
+		<group name="group1">
+			<groupExpression><![CDATA[$F{sales_products_invoice_no}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="qid" class="java.lang.String">
+		<defaultValueExpression><![CDATA[351201995]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cname" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     sales_details.`invoice_no` AS sales_details_invoice_no,
+     sales_details.`customer_id` AS sales_details_customer_id,
+     sales_details.`location` AS sales_details_location,
+     sales_details.`date_of_sale` AS sales_details_date_of_sale,
+     sales_details.`total` AS sales_details_total,
+     sales_details.`dis` AS sales_details_dis,
+     sales_details.`dis_amt` AS sales_details_dis_amt,
+     sales_details.`warranty_from` AS sales_details_warranty_from,
+     sales_details.`warranty_to` AS sales_details_warranty_to,
+     sales_details.`sales_demo` AS sales_details_sales_demo,
+     sales_details.`collection_status` AS sales_details_collection_status,
+     sales_details.`amc_amount` AS sales_details_amc_amount,
+     sales_details.`edate` AS sales_details_edate,
+     sales_details.`ep` AS sales_details_ep,
+     sales_details.`udate` AS sales_details_udate,
+     sales_details.`up` AS sales_details_up,
+     sales_details.`status` AS sales_details_status,
+     sales_details.`id` AS sales_details_id,
+     sales_details.`pono` AS sales_details_pono,
+     sales_details.`net_amt` AS sales_details_net_amt,
+     sales_details.`amt_in_words` AS sales_details_amt_in_words,
+     sales_details.`company_id` AS sales_details_company_id,
+     sales_details.`warranty_year` AS sales_details_warranty_year,
+     customer_registration.`cid` AS customer_registration_cid,
+     customer_registration.`cname` AS customer_registration_cname,
+     customer_registration.`mail` AS customer_registration_mail,
+     customer_registration.`m1` AS customer_registration_m1,
+     customer_registration.`m2` AS customer_registration_m2,
+     customer_registration.`addr` AS customer_registration_addr,
+     customer_registration.`cperson` AS customer_registration_cperson,
+     customer_registration.`stype` AS customer_registration_stype,
+     customer_registration.`edate` AS customer_registration_edate,
+     customer_registration.`eperson` AS customer_registration_eperson,
+     customer_registration.`status` AS customer_registration_status,
+     customer_registration.`udate` AS customer_registration_udate,
+     customer_registration.`uperson` AS customer_registration_uperson,
+     customer_registration.`id` AS customer_registration_id,
+     customer_registration.`state` AS customer_registration_state,
+     customer_registration.`pin` AS customer_registration_pin,
+     company_registration.`cid` AS company_registration_cid,
+     company_registration.`cname` AS company_registration_cname,
+     company_registration.`m1` AS company_registration_m1,
+     company_registration.`m2` AS company_registration_m2,
+     company_registration.`mail` AS company_registration_mail,
+     company_registration.`address` AS company_registration_address,
+     company_registration.`logo_address` AS company_registration_logo_address,
+     company_registration.`ep` AS company_registration_ep,
+     company_registration.`edate` AS company_registration_edate,
+     company_registration.`up` AS company_registration_up,
+     company_registration.`udate` AS company_registration_udate,
+     company_registration.`status` AS company_registration_status,
+     company_registration.`img` AS company_registration_img,
+     company_registration.`tin` AS company_registration_tin,
+     company_registration.`cst` AS company_registration_cst,
+     company_registration.`address1` AS company_registration_address1,
+     customer_registration.`tin` AS customer_registration_tin,
+     customer_registration.`cst` AS customer_registration_cst,
+     customer_registration.`ctype` AS customer_registration_ctype,
+     company_registration.`pan` AS company_registration_pan,
+     company_registration.`cin` AS company_registration_cin,
+     company_registration.`sig_address` AS company_registration_sig_address,
+     company_registration.`sig_img` AS company_registration_sig_img
+FROM
+     `sales_details` sales_details INNER JOIN `customer_registration` customer_registration ON sales_details.`customer_id` = customer_registration.`cid`
+     INNER JOIN `company_registration` company_registration ON sales_details.`company_id` = company_registration.`cid`
+WHERE
+     sales_details.`invoice_no` = $P{qid}]]>
+	</queryString>
+	<field name="sales_details_invoice_no" class="java.lang.String"/>
+	<field name="sales_details_customer_id" class="java.lang.String"/>
+	<field name="sales_details_location" class="java.lang.String"/>
+	<field name="sales_details_date_of_sale" class="java.sql.Date"/>
+	<field name="sales_details_total" class="java.lang.String"/>
+	<field name="sales_details_dis" class="java.lang.String"/>
+	<field name="sales_details_dis_amt" class="java.lang.String"/>
+	<field name="sales_details_warranty_from" class="java.sql.Date"/>
+	<field name="sales_details_warranty_to" class="java.sql.Date"/>
+	<field name="sales_details_sales_demo" class="java.lang.String"/>
+	<field name="sales_details_collection_status" class="java.lang.String"/>
+	<field name="sales_details_amc_amount" class="java.lang.String"/>
+	<field name="sales_details_edate" class="java.sql.Date"/>
+	<field name="sales_details_ep" class="java.lang.String"/>
+	<field name="sales_details_udate" class="java.sql.Date"/>
+	<field name="sales_details_up" class="java.lang.String"/>
+	<field name="sales_details_status" class="java.lang.String"/>
+	<field name="sales_details_id" class="java.lang.Long"/>
+	<field name="sales_details_pono" class="java.lang.String"/>
+	<field name="sales_details_net_amt" class="java.lang.String"/>
+	<field name="sales_details_amt_in_words" class="java.lang.String"/>
+	<field name="sales_details_company_id" class="java.lang.String"/>
+	<field name="sales_details_warranty_year" class="java.lang.String"/>
+	<field name="customer_registration_cid" class="java.lang.String"/>
+	<field name="customer_registration_cname" class="java.lang.String"/>
+	<field name="customer_registration_mail" class="java.lang.String"/>
+	<field name="customer_registration_m1" class="java.lang.String"/>
+	<field name="customer_registration_m2" class="java.lang.String"/>
+	<field name="customer_registration_addr" class="java.lang.String"/>
+	<field name="customer_registration_cperson" class="java.lang.String"/>
+	<field name="customer_registration_stype" class="java.lang.String"/>
+	<field name="customer_registration_edate" class="java.sql.Date"/>
+	<field name="customer_registration_eperson" class="java.lang.String"/>
+	<field name="customer_registration_status" class="java.lang.String"/>
+	<field name="customer_registration_udate" class="java.sql.Date"/>
+	<field name="customer_registration_uperson" class="java.lang.String"/>
+	<field name="customer_registration_id" class="java.lang.Long"/>
+	<field name="customer_registration_state" class="java.lang.String"/>
+	<field name="customer_registration_pin" class="java.lang.String"/>
+	<field name="company_registration_cid" class="java.lang.Long"/>
+	<field name="company_registration_cname" class="java.lang.String"/>
+	<field name="company_registration_m1" class="java.lang.String"/>
+	<field name="company_registration_m2" class="java.lang.String"/>
+	<field name="company_registration_mail" class="java.lang.String"/>
+	<field name="company_registration_address" class="java.lang.String"/>
+	<field name="company_registration_logo_address" class="java.lang.String"/>
+	<field name="company_registration_ep" class="java.lang.String"/>
+	<field name="company_registration_edate" class="java.sql.Date"/>
+	<field name="company_registration_up" class="java.lang.String"/>
+	<field name="company_registration_udate" class="java.sql.Date"/>
+	<field name="company_registration_status" class="java.lang.String"/>
+	<field name="company_registration_img" class="java.io.InputStream"/>
+	<field name="company_registration_tin" class="java.lang.String"/>
+	<field name="company_registration_cst" class="java.lang.String"/>
+	<field name="company_registration_address1" class="java.lang.String"/>
+	<field name="customer_registration_tin" class="java.lang.String"/>
+	<field name="customer_registration_cst" class="java.lang.String"/>
+	<field name="customer_registration_ctype" class="java.lang.String"/>
+	<field name="company_registration_pan" class="java.lang.String"/>
+	<field name="company_registration_cin" class="java.lang.String"/>
+	<field name="company_registration_sig_address" class="java.lang.String"/>
+	<field name="company_registration_sig_img" class="java.io.InputStream"/>
+	<background>
+		<band height="782" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="570" height="780" uuid="90d72c8f-f4a9-4b2f-bfde-69661ab9c85c"/>
+				<box>
+					<topPen lineWidth="1.25" lineStyle="Solid"/>
+					<leftPen lineWidth="1.25" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.25" lineStyle="Solid"/>
+					<rightPen lineWidth="1.25" lineStyle="Solid"/>
+				</box>
+			</frame>
+		</band>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="121" splitType="Stretch">
+			<textField>
+				<reportElement x="134" y="75" width="200" height="15" uuid="f6424cda-372b-4910-834a-3c845bd5366c"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Email: "+$F{company_registration_mail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="60" width="200" height="15" uuid="3dccf9d8-8522-419f-93af-d14698cbb0a5"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Ph: "+$F{company_registration_m2}+", "+$F{company_registration_m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="5" width="400" height="26" uuid="75a89cfa-6e98-432b-ad69-7ad29ce0af49"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_registration_cname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="45" width="200" height="15" uuid="5669e79e-b983-4eab-88ba-4ba62f3bafb0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{company_registration_address1}]]></textFieldExpression>
+			</textField>
+			<image isUsingCache="true">
+				<reportElement x="15" y="2" width="105" height="92" uuid="d9ebd770-9fd9-4f82-bbc7-74f0fafb1cd8"/>
+				<imageExpression><![CDATA[$F{company_registration_img}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="134" y="30" width="200" height="15" uuid="5a8e8333-3086-45ef-9a27-e1128a7a5ae3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{company_registration_address}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="95" width="570" height="1" uuid="2aee636d-2b19-4951-bb77-8bd22f87136b"/>
+			</line>
+			<line>
+				<reportElement x="0" y="97" width="570" height="1" uuid="80c8051c-1047-43ac-aa02-5e01d6a4ea96"/>
+			</line>
+			<line>
+				<reportElement x="345" y="30" width="1" height="60" uuid="b8666c47-2329-48dc-9a84-c0cc298861c3"/>
+			</line>
+			<textField>
+				<reportElement x="360" y="75" width="200" height="15" uuid="78afb009-6ce2-4128-ae6b-3ea54b28ba0d"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CIN No.   :  "+$F{company_registration_cin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="60" width="200" height="15" uuid="ee6f3a60-4ecb-494a-b0a5-2a66fb9dbea0"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["PAN No.  :  "+$F{company_registration_pan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="45" width="200" height="15" uuid="10a6441e-b356-4ed2-bd97-8de26beed9d6"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CST No.  :  "+$F{company_registration_cst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="30" width="200" height="15" uuid="92c8bdc5-24a6-49e7-b6c2-3463a28b8200"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["TIN No.   :  "+$F{company_registration_tin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="13" y="98" width="547" height="20" uuid="d469583d-c3be-426d-8d63-a43cd73485b4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Invoice]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="118" width="570" height="1" uuid="ef1a6442-2316-449e-92e4-c01853d175d7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="120" width="570" height="1" uuid="3bacb60c-33d3-4ef6-8c6c-3aa084703b20"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="2" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="101">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT} == 1]]></printWhenExpression>
+			<staticText>
+				<reportElement x="15" y="5" width="70" height="18" uuid="e3572ba4-187a-4b95-8b24-cb7d3088999b"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Buyer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="10" width="80" height="15" uuid="81bdacf6-ed05-4aa5-8b47-9b2cbc394762"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Invoice No     :    ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="25" width="80" height="15" uuid="929ce8d9-f34d-4c30-82e9-ed0cedd9076c"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date              :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="40" width="70" height="30" uuid="62510301-b57c-4cf6-bc77-08c42b86d26d"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mode / Terms Of Payment    :]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="480" y="10" width="80" height="15" uuid="0848f571-ebe5-44f4-87d5-fd89dd3735df"/>
+				<textFieldExpression><![CDATA[$F{sales_details_invoice_no}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="480" y="25" width="80" height="15" uuid="947b51e1-1a85-4456-bacc-2a2116bc682f"/>
+				<textFieldExpression><![CDATA[$F{sales_details_date_of_sale}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="480" y="40" width="80" height="15" uuid="f4be7680-03d5-4fa7-b435-bb8da544bcf2"/>
+				<textFieldExpression><![CDATA[$F{sales_details_collection_status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="15" y="25" width="185" height="13" uuid="15494fef-1c42-4545-a57f-11e9945ea80d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cname}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="210" y="25" width="185" height="70" uuid="76f12b41-5bb6-4eca-810e-7c43220c5464"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sales_details_location}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="210" y="5" width="70" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="81fa871e-81ad-4070-a766-70c54246c233"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Receiver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="70" width="80" height="15" uuid="ad2249f4-ef99-415f-9bdc-052327b1afbd"/>
+				<textElement>
+					<font fontName="Tahoma" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PO No            :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="480" y="70" width="80" height="15" uuid="9f57e7bb-e041-4a54-a644-001906f57c76"/>
+				<textFieldExpression><![CDATA[$F{sales_details_pono}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="100" width="570" height="1" uuid="68b4d248-f7e1-4957-9b7e-f255f23f5f5a"/>
+			</line>
+			<line>
+				<reportElement x="202" y="0" width="1" height="98" uuid="e98f8353-2659-4424-a855-e000a79b9008"/>
+			</line>
+			<line>
+				<reportElement x="400" y="0" width="1" height="98" uuid="410a7496-8efe-45f3-9e9d-d4dc7996fd93"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="15" y="51" width="185" height="26" uuid="b1c4fa2a-a529-4ac5-886f-344057f0f2de"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ph : "+$F{customer_registration_m2}+" "+$F{customer_registration_m1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="15" y="38" width="185" height="13" uuid="eb796eb2-596a-4a0f-ba83-81435219b7c3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_registration_addr}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="190">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT} == 1]]></printWhenExpression>
+			<componentElement>
+				<reportElement key="table 6" style="table 6" x="15" y="20" width="545" height="10" uuid="6178c54d-c6aa-4657-a01f-520df280ecec"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="New Dataset 2" uuid="8b558bc5-5ae7-40a1-9d9a-8a97aa101375">
+						<datasetParameter name="qid">
+							<datasetParameterExpression><![CDATA[$P{qid}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="30" uuid="d04e9db3-1ec1-482f-b7b6-fca2d7ea9ffd">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="30" height="20" uuid="8434396c-b1ec-4095-9dcd-5f9704a079fb"/>
+								<textElement>
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[  SNO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="2" y="3" width="28" height="15" uuid="2cd95ab5-8b26-41d2-8e94-d0a399bae0cc"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="eef77b2e-65c9-4463-b070-9f6187441ea9">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="78" height="20" uuid="3b314930-19ca-471d-9650-940825910217"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[Product]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="2" y="3" width="78" height="15" uuid="0a9eca92-230c-4006-a828-23b239019787"/>
+								<textFieldExpression><![CDATA[$F{item_tbl_itemname}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="135" uuid="67d971f6-daa4-4d83-a162-13ed2ced039f">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="130" height="20" uuid="82d2bb82-8752-47fd-b68e-9320206da2e0"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[Description]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="2" y="3" width="133" height="15" uuid="d380a328-cbcc-430f-baff-13a9acf68c0e"/>
+								<textFieldExpression><![CDATA[$F{item_tbl_description}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="52" uuid="7eba2429-6e7f-4c94-acda-a960c251aa8e">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="50" height="20" uuid="11d56cb4-6a92-438d-bd82-3d39dd5ff289"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Rate P/Q]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="50" height="15" uuid="8e937b8a-6159-4543-814c-2ba0c366fad7"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{sales_products_rate_per_quantity}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="4cbb85e2-95a0-409c-a069-afc617335828">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="32" height="20" uuid="7905ac52-549c-4b0f-8fd4-2e3353736d07"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Qty]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="33" height="15" uuid="ae8b958e-eac3-4d99-94ac-f37fd3820335"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{sales_products_quantity}+" "+$F{item_tbl_uom}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="53" uuid="5ade84b4-634a-44c1-8358-5ed342dcc8eb">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="52" height="20" uuid="8d38e619-5587-4752-92a5-82da9f102e85"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Amount]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="51" height="15" uuid="433f4d2f-81a4-4efc-a1c5-c1813249254b"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{sales_products_amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="b690419f-a31b-43ca-90b9-c56485b077ea">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="36" height="20" uuid="ad1723c3-da90-42c8-9dd0-4a34619784af"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Tax %]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="35" height="15" uuid="1e689770-bd65-412f-b0a8-5c141d55fdab"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{sales_products_tax}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="52" uuid="d3f6f429-e85c-4edf-b33a-de0c6a425adb">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="50" height="20" uuid="8b95a3d1-fe30-4c8a-8c57-195816f6be91"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Tax Amt]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="50" height="15" uuid="30cba7dd-33ba-433a-b9b3-063fd7c33be3"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{sales_products_tax_amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="3edea3d7-6e90-4637-8342-9e85e5203154">
+						<jr:columnHeader style="table 6_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="64" height="20" uuid="364f91be-0af4-4bac-bdd3-15c3b2061d9c"/>
+								<textElement textAlignment="Center">
+									<font size="11"/>
+								</textElement>
+								<text><![CDATA[ Total Amt]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="20" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="3" width="63" height="15" uuid="0ee87f7f-ab62-4f00-b1c0-37f11f058740"/>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{sales_products_toatal_amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="15" y="0" width="200" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="14e2655e-f312-485e-b1bf-2f6be71a3099"/>
+				<textElement verticalAlignment="Top">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Product Details :]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="362" y="33" width="200" height="50" uuid="540ada74-abd4-491f-b884-a8be16341ba8"/>
+				<staticText>
+					<reportElement positionType="Float" x="50" y="17" width="70" height="20" uuid="94252c39-dd7f-49a5-9293-815d8c6a6e48"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Net Amount   ]]></text>
+				</staticText>
+				<textField pattern="">
+					<reportElement positionType="Float" x="102" y="17" width="90" height="20" uuid="ba2894b3-e936-48dc-b327-1e2161784957"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" isBold="true" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["INR "+$F{sales_details_net_amt}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="38" width="200" height="12" uuid="69dd16b2-14db-4d8b-b3ac-a48708ba851e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Amount Chargeable (in words)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="15" y="51" width="385" height="15" uuid="9ba67c75-c020-4198-92ff-de5752419194"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Rupees"+$F{sales_details_amt_in_words}+" Only."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="66" width="55" height="18" uuid="6caa4679-5112-4612-b5f5-352b142d0a5d"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Warranty :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="65" y="66" width="45" height="18" uuid="6d6205a7-6409-4b1c-b25b-c70ab7b12e53"/>
+				<textFieldExpression><![CDATA[$F{sales_details_warranty_year}+" Year(s)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="105" y="66" width="40" height="18" uuid="fd0717eb-da42-44df-b331-e51a9546929e"/>
+				<textFieldExpression><![CDATA[" (From: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MM-YYYY">
+				<reportElement positionType="Float" x="138" y="66" width="55" height="18" uuid="906d1670-3c1b-46c9-9bd0-d76db04404df"/>
+				<textFieldExpression><![CDATA[$F{sales_details_warranty_from}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="190" y="66" width="30" height="18" uuid="63c1253a-df12-42db-a3ba-37089edab8d4"/>
+				<textFieldExpression><![CDATA[", To: "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MM-YYYY">
+				<reportElement positionType="Float" x="210" y="66" width="55" height="18" uuid="55be8630-beb7-4d19-b623-471d99605545"/>
+				<textFieldExpression><![CDATA[$F{sales_details_warranty_to}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="261" y="66" width="20" height="18" uuid="c8bd3898-c7de-49b6-8efe-78bf2b4e9ac7"/>
+				<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="362" y="95" width="198" height="15" uuid="e719564c-1e5f-491f-af19-be49aa215129"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[For Justcart Online Services Pvt Ltd]]></text>
+			</staticText>
+			<image hAlign="Center" isUsingCache="true">
+				<reportElement positionType="Float" x="460" y="110" width="100" height="30" uuid="f64476d9-2e2e-423a-8833-2df062d7ced5"/>
+				<imageExpression><![CDATA[$F{company_registration_sig_img}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement positionType="Float" x="460" y="140" width="100" height="15" uuid="1f86046c-3d92-4e41-b371-5fe05a117ff8"/>
+				<text><![CDATA[Authorised Signatory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="100" width="62" height="15" uuid="55c9c9a4-6659-4a22-85c0-af8336cc1281"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Buyer's TIN  :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="77" y="100" width="200" height="15" uuid="8676c24a-8aec-49b9-a862-2f2f6df3e163"/>
+				<textFieldExpression><![CDATA[$F{customer_registration_tin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="115" width="62" height="15" uuid="80817e2f-9013-4032-843b-71e740de7193"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Buyer's CST :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="75" y="115" width="200" height="15" uuid="742513d3-0373-40e6-8bc6-91faaaac0f07"/>
+				<textFieldExpression><![CDATA[$F{customer_registration_cst}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="140" width="100" height="13" uuid="d628a1c5-3167-4f63-848c-27a856ce74fe"/>
+				<text><![CDATA[Declaration :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="157" width="400" height="13" uuid="30c7ca09-682b-4206-95a2-2aadad59026c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[We declare that this invoice shows the actual price of the goods]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="15" y="170" width="400" height="13" uuid="e3da15b4-2426-4682-8e38-248cff3153f9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[described and that allparticulars are true and correct.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="10" width="423" height="12" forecolor="#000000" uuid="4e848a92-33f3-49d1-a18a-86f703e6232e"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[This document generated using Serveplus Online CRM, a product of Justcart Online Services Pvt Ltd.]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="520" y="10" width="40" height="18" uuid="ec9d4da6-e612-46dc-bc60-20d3724b3abf"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="10" width="80" height="18" uuid="2dac5564-cc93-42ca-8d87-83d114bfd1a1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="2" splitType="Stretch"/>
+	</summary>
+</jasperReport>
